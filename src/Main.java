@@ -107,7 +107,7 @@ public class Main {
     public static void task8(){
         System.out.println("Задача 8");
         int year = 0;
-        int startYear = 1942;
+        int startYear = 2023;
         int yearComet = 79;
         int last200Year = 200;
         int next100Year = 100;
@@ -115,7 +115,7 @@ public class Main {
 
         while (year < checkYear) {
             year = year + yearComet;
-            if (year) {
+            if (startYear-last200Year<=year && startYear+next100Year>=year) {
                 System.out.println(year);
             }
         }
